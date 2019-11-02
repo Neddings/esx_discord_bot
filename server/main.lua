@@ -57,7 +57,7 @@ end)
 RegisterServerEvent("esx:giveitemalert")
 AddEventHandler("esx:giveitemalert", function(name,nametarget,itemname,amount)
    if(settings.LogItemTransfer)then
-    sendToDiscord(_U('server_item_transfer'),name.._('user_gives_to')..nametarget.." "..amount .." "..itemname,Config.orange)
+    sendToDiscord(_U('server_item_transfer'),name.." ".._('user_gives_to').." "..nametarget.." "..amount .." "..itemname,Config.orange)
    end
 
 end)
